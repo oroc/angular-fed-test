@@ -1,0 +1,23 @@
+<div *ngIf="property" class="PropertyCard">
+  <div class="ImageAndPrice">
+    <div class="image">
+      <img src="{{property.mainImage}}" alt="Property" />
+    </div>
+    <div class="price">£ {{property.price}}</div>
+  </div>
+  <div class="PropertyDetails">
+    <a href="{{property.propertyUrl}}">
+      <h1 class="propertyTitle">{{property.propertyTitle}}</h1>
+      <p class="displayAddress">{{property.displayAddress}}</p>
+      <p class="summary">{{property.summary}}</p>
+    </a>
+    <div class="agentInfo">
+      <a href="mailto:fakemail.fedtest@rightmove.co.uk">
+        <span role="img" aria-label="Email icon">
+            ✉️
+        </span>
+        Contact {{property.branchName}}
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Effra';
+  src: url('https://media.dev.rightmove.com/assets/shared-assets/fonts/effra/Effra_WLatn_Md.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Effra';
+  src: url('https://media.dev.rightmove.com/assets/shared-assets/fonts/effra/Effra_WLatn_Rg.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  font-size: 16px;
+}
+
+*,
+body {
+  font-family: 'Effra', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+  'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  color: #262637;
+}
+
+body {
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace !important;
+  color: indianred;
+}
