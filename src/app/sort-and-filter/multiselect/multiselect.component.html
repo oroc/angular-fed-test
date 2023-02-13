@@ -1,0 +1,7 @@
+<div class="MultiSelect">
+  <div>{{label}}</div>
+  <label *ngFor="let option of options">
+    <input type="checkbox" value="{{option.toLowerCase()}}" (change)="handleChange($event)" />
+      {{option}}
+  </label>
+</div>

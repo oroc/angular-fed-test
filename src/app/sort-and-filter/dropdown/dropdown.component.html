@@ -1,0 +1,10 @@
+<div class="Dropdown">
+  <label>
+    {{label}}
+    <select (change)="handleChange($event)">
+      <option *ngFor="let option of options" value="{{option}}">
+        {{option}}
+      </option>
+    </select>
+  </label>
+</div>

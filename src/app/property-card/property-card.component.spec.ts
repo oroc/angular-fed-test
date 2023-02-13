@@ -38,7 +38,7 @@ describe('PropertyCardComponent', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('p.displayAddress')?.textContent).toContain('North Shire, TS13 4TJ');
   });
-  //
+
   it('should render property image', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('img')?.src).toContain('61AG4UpUoPL._SX300_QL70_.jpg');

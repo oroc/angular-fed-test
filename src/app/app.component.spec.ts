@@ -6,12 +6,17 @@ import { Component } from "@angular/core";
 class PropertyListingStubComponent {
 }
 
+@Component({selector: 'app-sort-and-filter', template: ''})
+class SortAndFilterStubComponent {
+}
+
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-        PropertyListingStubComponent
+        PropertyListingStubComponent,
+        SortAndFilterStubComponent
       ],
     }).compileComponents();
   });
