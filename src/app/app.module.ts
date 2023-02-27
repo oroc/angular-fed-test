@@ -7,6 +7,7 @@ import { PropertyListingComponent } from './property-listing/property-listing.co
 import { SortAndFilterComponent } from './sort-and-filter/sort-and-filter.component';
 import { DropdownComponent } from './sort-and-filter/dropdown/dropdown.component';
 import { MultiselectComponent } from './sort-and-filter/multiselect/multiselect.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,12 +16,10 @@ import { MultiselectComponent } from './sort-and-filter/multiselect/multiselect.
     PropertyListingComponent,
     SortAndFilterComponent,
     DropdownComponent,
-    MultiselectComponent
+    MultiselectComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
